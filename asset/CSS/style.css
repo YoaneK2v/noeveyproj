@@ -4,4 +4,15 @@
     padding: 0;
     list-style: none;
     text-decoration: none;
+    text-align: center;
+}
+
+body {
+
+    width: 50%;
+    margin: auto;
+    margin-top: 10%;
+    display: flex;
+    align-items: center;
+    border:  solid 40px black;
 }
