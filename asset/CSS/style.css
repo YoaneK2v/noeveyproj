@@ -29,7 +29,7 @@
 /* --- FORMULAIRE --- */
 
 form {
-    width: 90%;
+    width: 100%;
     margin: auto;
 }
 
@@ -132,8 +132,18 @@ form fieldset .form_items .subscribe_text {
 }
 
 section {
-
     background-color: rgb(152, 152, 247);
-    padding: 4%;
     border-radius: 0 10px 10px 0;
+    width: 100%;
+}
+
+section h2 {
+    margin-top: 40%;
+    color: blueviolet;
+}
+
+section p {
+
+    margin-top: 9%;
+    color: whitesmoke;
 }
