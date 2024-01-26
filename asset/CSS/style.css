@@ -7,6 +7,12 @@
     text-align: center;
 }
 
+
+body {
+    width: 100%;
+    margin: auto;
+}
+
 .bloc {
 
     width: 60%;
@@ -36,7 +42,7 @@ form {
 form h1 {
 
     color: blueviolet;
-    font-size: medium;
+    font-size: 1.5vw;
     margin: 5% auto;
 }
 
@@ -48,7 +54,7 @@ form fieldset {
 
 form fieldset legend {
 
-    font-size: 2rem;
+    font-size: 2.3vw;
     font-weight: bolder;
     margin: 2.1% auto;
     text-transform: uppercase;
@@ -125,7 +131,7 @@ form fieldset .form_items #btn_connect {
 }
 
 form fieldset .form_items .subscribe_text {
-    font-size: 15px;
+    font-size: 13px;
     text-align: center;
     margin-bottom: 4%;
 
@@ -149,3 +155,48 @@ section p {
     margin-top: 9%;
     color: whitesmoke;
 }
+
+
+/* Responsive  */
+
+@media only screen and (max-width:800px) {
+    /* For tablets: */
+
+    .bloc {
+
+        width: 100%;
+        padding: 0;
+        background-color: #fff;
+    }
+
+    .container {
+        width: 90%;
+        
+    }
+    
+    
+  }
+  @media only screen and (max-width:500px) {
+    /* For mobile phones: */
+
+
+    .bloc {
+        width: 100%;
+        padding: 0;
+    }
+
+    .container {
+        
+        width: 90%;
+        box-shadow: none;
+        border-radius: 0;
+        
+    }
+    
+    section {
+
+        display: none;
+
+    }
+
+  }
