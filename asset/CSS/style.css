@@ -60,6 +60,8 @@ form fieldset legend {
     text-transform: uppercase;
 }
 
+/* google btn */
+
 form fieldset #btn_google {
     display: flex;
     justify-content: center;
@@ -70,6 +72,15 @@ form fieldset #btn_google {
     border: solid 1px rgba(245, 245, 245, 0.74);
     border-radius: 6px;
     box-shadow: 2px 2px 3px rgba(224, 224, 224, 0.726);
+    cursor:pointer;
+    transition: transform 0.3s, border 0.3s, color 0.3s;
+}
+
+form fieldset #btn_google:hover {
+
+    transform: translateY(-1px);
+    border: 1px solid rgb(197, 197, 197);
+
 }
 
 form fieldset #text { 
@@ -128,6 +139,16 @@ form fieldset .form_items #btn_connect {
     font-size: medium;
     font-weight: bold;
     text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s, color 0.3s, font-size 0.3s;
+}
+
+form fieldset .form_items #btn_connect:hover { 
+
+    transform: translateY(-1px);
+    background-color: #fff;
+    font-size: large;
+    color: rgb(149, 69, 224);
 }
 
 form fieldset .form_items .subscribe_text {
