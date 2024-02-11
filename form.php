@@ -9,11 +9,11 @@ if(isset($_POST['submit'])) {
     //database details. You have created these details in the third step. Use your own
     $host = "localhost";
     $username = "formdb_user";
-    $password = "abc123";
+    $passwords = "abc123";
     $dbname = "form_connect";
 
     //create connection
-    $con = mysqli_connect($host, $username,$password, $dbname);
+    $con = mysqli_connect($host, $username,$passwords, $dbname);
 
     //check connection if it is working or not
 
@@ -21,9 +21,8 @@ if(isset($_POST['submit'])) {
         die("connection failed!" . mysqli_connect_error());
     }
 
-
     //This below line is a code to Send form entries to database
-    $sql = "INSERT INTO user_connect (id, email_user, password_user) VALUES('O', '$email', '$password')";
+    $sql = "INSERT INTO user_connect (email_user, password_user) VALUES('$email', '$password')";
 
     //fire query to save entries and check it with if statement
 
@@ -35,6 +34,7 @@ if(isset($_POST['submit'])) {
     else{
         echo "Error, connect no match";
     }
+
 
     //connection closed
     mysqli_close($con);
